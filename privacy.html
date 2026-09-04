@@ -27,6 +27,7 @@
   <li>The names, doses and schedules of the things you choose to track.</li>
   <li>Which doses you recorded as taken or deliberately skipped, and on which days.</li>
   <li>Any notes you write.</li>
+  <li>The air pressure measured by this phone's barometer on each day you opened the app.</li>
   <li>Your settings, including reminder times and a review date if you set one.</li>
 </ul>
 <p>This information is not transmitted anywhere. The developer cannot see it, and has no way to see it. If you delete the app, this information is deleted with it.</p>
@@ -38,6 +39,11 @@
 <h2>Searching for a medication or supplement name</h2>
 <p>Fog Log includes a built-in list of prescription, over-the-counter and supplement names so that you don't have to type them from memory. That list is a file inside the app. When you search it, the search runs on your device and nothing you type is sent anywhere.</p>
 <p>The lists come from two United States government sources, both free to redistribute: RxTerms, published by the National Library of Medicine, and the Dietary Supplement Label Database, published by the National Institutes of Health Office of Dietary Supplements. Neither organisation is involved in this app, receives anything from it, or knows that you use it.</p>
+
+<h2>Air pressure</h2>
+<p>Fog Log records the air pressure alongside your daily check-in. That reading comes from a barometer inside your iPhone — a sensor in the device itself. It is not a weather lookup: no location is used, no weather service is contacted, and nothing is requested over the internet. The reading is stored with that day's entry on your device like everything else.</p>
+<p>iOS asks for permission the first time, because the barometer sits behind the same privacy control as the phone's motion sensors. If you decline, every other part of the app carries on working and days simply have no pressure recorded.</p>
+<p>Because it measures pressure where you actually are rather than at sea level, the figure reads lower than the one a weather forecast quotes. That is expected, and it does not affect the day-to-day changes the app charts.</p>
 
 <h2>When you export or back up</h2>
 <p>Fog Log can produce three kinds of file, and each one is created only when you ask for it:</p>
@@ -56,6 +62,7 @@
   <li>No advertising, and no advertising identifiers.</li>
   <li>No third-party software libraries. The app contains only code written for it.</li>
   <li>No access to your contacts, photos, location, microphone, camera or calendar.</li>
+  <li>No weather service, and no lookup of where you are. Air pressure comes from the phone's own barometer.</li>
   <li>No connection to Apple Health, and no reading or writing of HealthKit data.</li>
   <li>No selling or sharing of information, because none is gathered to sell or share.</li>
 </ul>
