@@ -26,3 +26,11 @@ ul { padding-left: 1.2rem; } li { margin: .3rem 0; }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem 1.25rem; margin: 1.5rem 0; }
 footer.site { border-top: 1px solid var(--line); margin-top: 3rem; }
 footer.site .wrap { padding: 1.25rem; color: var(--muted); font-size: .9rem; }
+header.site a.brand { color: var(--ink); font-weight: 650; }
+.card.product { display: flex; gap: 1rem; align-items: flex-start; }
+.card.product img { border-radius: 16px; flex: none; }
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0; }
+.shots figure { margin: 0; }
+.shots img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); display: block; }
+.shots figcaption { color: var(--muted); font-size: .85rem; text-align: center; margin-top: .35rem; }
+@media (max-width: 30rem) { .card.product { flex-direction: column; } }
